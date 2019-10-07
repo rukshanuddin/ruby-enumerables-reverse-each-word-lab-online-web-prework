@@ -3,3 +3,7 @@ def reverse_each_word(sentence1)
   d = s.collect { |e| "#{e.reverse}" }
   d.join(" ")
 end
+
+def reverse_each_word(sentence1)
+  sentence1.split.collect { |e| "#{e.reverse}" }.join(" ")
+end
